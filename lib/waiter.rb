@@ -24,8 +24,8 @@ def meals
 end 
 
 def best_tipper 
-  meals.map do |meal| 
-    meal.customer 
+  meals.all.select do |meal| 
+    meal.waiter == self  
   end 
 end 
 
