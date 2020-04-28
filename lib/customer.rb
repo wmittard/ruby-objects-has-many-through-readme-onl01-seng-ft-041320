@@ -14,8 +14,8 @@ class Customer
       @@all 
     end 
     
-    def meals
-      @meals = []
+    def new_meal
+      Customer.new
     end
   
 end
