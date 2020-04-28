@@ -19,6 +19,6 @@ class Customer
       #we don't need to take customer in as an arguement as we are passing self as a reference to the current instance of customer.
     end 
       
-    end
+  
   
 end
