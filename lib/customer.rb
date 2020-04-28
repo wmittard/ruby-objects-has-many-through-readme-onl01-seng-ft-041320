@@ -14,7 +14,10 @@ class Customer
       @@all 
     end 
     
-    def new_meal 
+    def new_meal(waiter,total,tip=0) 
+      Meal.new(waiter,self,total,tip)
+      #we don't need to take customer in as an arguement as we are passing self as a reference to the current instance of customer.
+    end 
       
     end
   
