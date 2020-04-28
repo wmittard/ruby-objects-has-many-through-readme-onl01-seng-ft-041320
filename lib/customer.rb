@@ -19,6 +19,11 @@ class Customer
       #we don't need to take customer in as an arguement as we are passing self as a reference to the current instance of customer.
     end 
       
-  
+  def meals 
+    Meal.all.select do |meal| 
+      meal.customer == self 
+      # we are iterating through every instance of Meal and returning only the ones where the meal"s customer matches the current customer.
+    end 
+  end 
   
 end
