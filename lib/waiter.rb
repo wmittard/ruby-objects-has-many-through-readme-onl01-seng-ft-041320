@@ -23,4 +23,10 @@ def meals
   end
 end 
 
+def best_tipper 
+  meals.map do |meal| 
+    meal.customer 
+  end 
+end 
+
 end
